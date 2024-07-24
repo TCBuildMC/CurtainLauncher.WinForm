@@ -14,7 +14,7 @@ jobs:
     
     strategy:
       matrix:
-        dotnet_version: ['8.0.2']
+        dotnet_version: ['8.0.x']
         os: ['windows-latest']
 
     runs-on: ${{ matrix.os }}
