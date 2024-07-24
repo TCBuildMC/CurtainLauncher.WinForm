@@ -1,0 +1,55 @@
+name: Push Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    if: ${{ contains(github.event.head_commit.message, '[build skip]') == false }}
+    permissions:
+      contents: write
+    
+    strategy:
+      matrix:
+        dotnet_version: ['8.0.2']
+        os: ['windows-latest']
+
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Setup Dotnet Core ${{ matrix.dotnet_version }}
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ matrix.dotnet_version }}
+
+      - name: Install dependencies
+        run: |
+          dotnet restore
+
+      - name: Build App
+        run: |
+          dotnet build
+
+      - name: Publish App (win-x64)
+        run: |
+          dotnet publish -p:PublishProfile=Release-Win-x64.pubxml
+
+      - name: Publish App (win-x86)
+        run: |
+          dotnet publish -p:PublishProfile=Release-Win-x86.pubxml
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: CurtainLauncher.WinForm
+          path: |
+            bin\Release\net8.0-windows\publish\win-x64\
+            bin\Release\net8.0-windows\publish\win-x86\
