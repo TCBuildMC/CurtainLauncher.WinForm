@@ -59,7 +59,7 @@
             Controls.Add(CurtainLauncherNameLabel);
             Controls.Add(CurtainLauncherIconBox);
             Name = "AboutPage";
-            Size = new Size(1200, 800);
+            Size = new Size(1178, 768);
             ((System.ComponentModel.ISupportInitialize)CurtainLauncherIconBox).EndInit();
             ResumeLayout(false);
             PerformLayout();

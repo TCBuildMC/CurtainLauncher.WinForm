@@ -1,6 +1,6 @@
-﻿namespace CurtainLauncher.WinForm.Controls.Pages
+﻿namespace CurtainLauncher.WinForm.Controls.Server
 {
-    partial class SettingsPage
+    partial class SetupPage2
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -30,12 +30,12 @@
         {
             SuspendLayout();
             // 
-            // SettingsPage
+            // SetupPage2
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            Name = "SettingsPage";
-            Size = new Size(1178, 768);
+            Name = "SetupPage2";
+            Size = new Size(778, 544);
             ResumeLayout(false);
         }
 

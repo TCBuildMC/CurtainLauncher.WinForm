@@ -34,7 +34,6 @@
             ServersPageItem = new ToolStripMenuItem();
             SettingsPageItem = new ToolStripMenuItem();
             AboutPageItem = new ToolStripMenuItem();
-            MainPanel = new Panel();
             PagesStrip.SuspendLayout();
             SuspendLayout();
             // 
@@ -80,21 +79,12 @@
             AboutPageItem.Text = "关于";
             AboutPageItem.Click += AboutPageItem_Click;
             // 
-            // MainPanel
-            // 
-            MainPanel.Dock = DockStyle.Fill;
-            MainPanel.Location = new Point(0, 32);
-            MainPanel.Name = "MainPanel";
-            MainPanel.Size = new Size(1178, 712);
-            MainPanel.TabIndex = 1;
-            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1178, 744);
-            Controls.Add(MainPanel);
             Controls.Add(PagesStrip);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = PagesStrip;
@@ -113,6 +103,5 @@
         private ToolStripMenuItem ServersPageItem;
         private ToolStripMenuItem SettingsPageItem;
         private ToolStripMenuItem AboutPageItem;
-        private Panel MainPanel;
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             SetupNewServerButton = new Button();
+            DownloadServerModpackButton = new Button();
             SuspendLayout();
             // 
             // SetupNewServerButton
@@ -42,18 +43,30 @@
             SetupNewServerButton.UseVisualStyleBackColor = true;
             SetupNewServerButton.Click += SetupNewServerButton_Click;
             // 
+            // DownloadServerModpackButton
+            // 
+            DownloadServerModpackButton.Location = new Point(743, 70);
+            DownloadServerModpackButton.Name = "DownloadServerModpackButton";
+            DownloadServerModpackButton.Size = new Size(321, 138);
+            DownloadServerModpackButton.TabIndex = 1;
+            DownloadServerModpackButton.Tag = "";
+            DownloadServerModpackButton.Text = "下载服务端整合包";
+            DownloadServerModpackButton.UseVisualStyleBackColor = true;
+            // 
             // ServersPage
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(DownloadServerModpackButton);
             Controls.Add(SetupNewServerButton);
             Name = "ServersPage";
-            Size = new Size(1200, 800);
+            Size = new Size(1178, 768);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button SetupNewServerButton;
+        private Button DownloadServerModpackButton;
     }
 }

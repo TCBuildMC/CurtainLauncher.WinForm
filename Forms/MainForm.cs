@@ -13,19 +13,19 @@ namespace CurtainLauncher.WinForm
 
         private void SwitchPage(UserControl page)
         {
-            if (this.MainPanel.Controls.Contains(page))
+            if (this.Controls.Contains(page))
             {
                 return;
             }
 
-            if (this.MainPanel.Controls.Count > 0)
+            if (this.Controls.Count > 1)
             {
-                this.MainPanel.Controls.RemoveAt(0);
+                this.Controls.RemoveAt(1);
             }
 
             page.Dock = DockStyle.Fill;
-            this.MainPanel.Controls.Add(page);
-            this.MainPanel.Tag = page;
+            this.Controls.Add(page);
+            this.Tag = page;
             page.Show();
         }
 

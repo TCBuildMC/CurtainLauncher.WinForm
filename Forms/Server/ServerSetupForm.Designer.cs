@@ -29,33 +29,70 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServerSetupForm));
-            TestLabel1 = new Label();
+            PreviousStepButton = new Button();
+            NextStepButton = new Button();
+            ContentPanel = new Panel();
+            ButtonPanel = new Panel();
+            ButtonPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // TestLabel1
+            // PreviousStepButton
             // 
-            TestLabel1.AutoSize = true;
-            TestLabel1.Location = new Point(317, 250);
-            TestLabel1.Name = "TestLabel1";
-            TestLabel1.Size = new Size(119, 24);
-            TestLabel1.TabIndex = 0;
-            TestLabel1.Text = "Hello World!";
+            PreviousStepButton.Location = new Point(536, 3);
+            PreviousStepButton.Name = "PreviousStepButton";
+            PreviousStepButton.Size = new Size(112, 34);
+            PreviousStepButton.TabIndex = 1;
+            PreviousStepButton.Text = "上一步";
+            PreviousStepButton.UseVisualStyleBackColor = true;
+            PreviousStepButton.Click += PreviousStepButton_Click;
+            // 
+            // NextStepButton
+            // 
+            NextStepButton.Location = new Point(654, 4);
+            NextStepButton.Name = "NextStepButton";
+            NextStepButton.Size = new Size(112, 34);
+            NextStepButton.TabIndex = 0;
+            NextStepButton.Text = "下一步";
+            NextStepButton.UseVisualStyleBackColor = true;
+            NextStepButton.Click += NextStepButton_Click;
+            // 
+            // ContentPanel
+            // 
+            ContentPanel.Dock = DockStyle.Fill;
+            ContentPanel.Location = new Point(0, 0);
+            ContentPanel.Name = "ContentPanel";
+            ContentPanel.Size = new Size(778, 544);
+            ContentPanel.TabIndex = 0;
+            // 
+            // ButtonPanel
+            // 
+            ButtonPanel.Controls.Add(PreviousStepButton);
+            ButtonPanel.Controls.Add(NextStepButton);
+            ButtonPanel.Dock = DockStyle.Bottom;
+            ButtonPanel.Location = new Point(0, 494);
+            ButtonPanel.Name = "ButtonPanel";
+            ButtonPanel.Size = new Size(778, 50);
+            ButtonPanel.TabIndex = 1;
             // 
             // ServerSetupForm
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(778, 544);
-            Controls.Add(TestLabel1);
+            Controls.Add(ButtonPanel);
+            Controls.Add(ContentPanel);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ServerSetupForm";
             Text = "CurtainLauncher | Setup Server";
+            ButtonPanel.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label TestLabel1;
+        private Button PreviousStepButton;
+        private Button NextStepButton;
+        private Panel ContentPanel;
+        private Panel ButtonPanel;
     }
 }
