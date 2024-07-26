@@ -34,6 +34,11 @@ namespace CurtainLauncher.WinForm
             this.SwitchPage(new HomePage());
         }
 
+        private void DownloadPageItem_Click(object sender, EventArgs e)
+        {
+            this.SwitchPage(new DownloadPage());
+        }
+
         private void ServersPageItem_Click(object sender, EventArgs e)
         {
             this.SwitchPage(new ServersPage());

@@ -34,13 +34,14 @@
             ServersPageItem = new ToolStripMenuItem();
             SettingsPageItem = new ToolStripMenuItem();
             AboutPageItem = new ToolStripMenuItem();
+            DownloadPageItem = new ToolStripMenuItem();
             PagesStrip.SuspendLayout();
             SuspendLayout();
             // 
             // PagesStrip
             // 
             PagesStrip.ImageScalingSize = new Size(24, 24);
-            PagesStrip.Items.AddRange(new ToolStripItem[] { HomePageItem, ServersPageItem, SettingsPageItem, AboutPageItem });
+            PagesStrip.Items.AddRange(new ToolStripItem[] { HomePageItem, DownloadPageItem, ServersPageItem, SettingsPageItem, AboutPageItem });
             PagesStrip.Location = new Point(0, 0);
             PagesStrip.Name = "PagesStrip";
             PagesStrip.Size = new Size(1178, 32);
@@ -49,7 +50,7 @@
             // 
             // HomePageItem
             // 
-            HomePageItem.Image = Properties.Resources.Home_32px;
+            HomePageItem.Image = Properties.Resources.home_32;
             HomePageItem.Name = "HomePageItem";
             HomePageItem.Size = new Size(86, 28);
             HomePageItem.Text = "主页";
@@ -57,7 +58,7 @@
             // 
             // ServersPageItem
             // 
-            ServersPageItem.Image = Properties.Resources.Server_32px;
+            ServersPageItem.Image = Properties.Resources.minecraft_server_32;
             ServersPageItem.Name = "ServersPageItem";
             ServersPageItem.Size = new Size(104, 28);
             ServersPageItem.Text = "服务器";
@@ -65,7 +66,7 @@
             // 
             // SettingsPageItem
             // 
-            SettingsPageItem.Image = Properties.Resources.Settings_32px;
+            SettingsPageItem.Image = Properties.Resources.settings_32;
             SettingsPageItem.Name = "SettingsPageItem";
             SettingsPageItem.Size = new Size(86, 28);
             SettingsPageItem.Text = "设置";
@@ -73,11 +74,19 @@
             // 
             // AboutPageItem
             // 
-            AboutPageItem.Image = Properties.Resources.About_32px;
+            AboutPageItem.Image = Properties.Resources.about_32;
             AboutPageItem.Name = "AboutPageItem";
             AboutPageItem.Size = new Size(86, 28);
             AboutPageItem.Text = "关于";
             AboutPageItem.Click += AboutPageItem_Click;
+            // 
+            // DownloadPageItem
+            // 
+            DownloadPageItem.Image = Properties.Resources.download_32;
+            DownloadPageItem.Name = "DownloadPageItem";
+            DownloadPageItem.Size = new Size(86, 28);
+            DownloadPageItem.Text = "下载";
+            DownloadPageItem.Click += DownloadPageItem_Click;
             // 
             // MainForm
             // 
@@ -103,5 +112,6 @@
         private ToolStripMenuItem ServersPageItem;
         private ToolStripMenuItem SettingsPageItem;
         private ToolStripMenuItem AboutPageItem;
+        private ToolStripMenuItem DownloadPageItem;
     }
 }

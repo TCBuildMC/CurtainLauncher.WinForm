@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CurtainLauncher.WinForm.Controls.Server
+namespace CurtainLauncher.WinForm.Controls.Pages
 {
-    public partial class SetupPage2 : UserControl
+    public partial class DownloadPage : UserControl
     {
-        public SetupPage2()
+        public DownloadPage()
         {
             InitializeComponent();
         }

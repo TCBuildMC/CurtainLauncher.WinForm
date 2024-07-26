@@ -63,9 +63,9 @@ namespace CurtainLauncher.WinForm.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap About_32px {
+        internal static System.Drawing.Bitmap about_32 {
             get {
-                object obj = ResourceManager.GetObject("About_32px", resourceCulture);
+                object obj = ResourceManager.GetObject("about_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace CurtainLauncher.WinForm.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap Home_32px {
+        internal static System.Drawing.Bitmap download_32 {
             get {
-                object obj = ResourceManager.GetObject("Home_32px", resourceCulture);
+                object obj = ResourceManager.GetObject("download_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace CurtainLauncher.WinForm.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap Server_32px {
+        internal static System.Drawing.Bitmap external_link_32 {
             get {
-                object obj = ResourceManager.GetObject("Server_32px", resourceCulture);
+                object obj = ResourceManager.GetObject("external_link_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,39 @@ namespace CurtainLauncher.WinForm.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap Settings_32px {
+        internal static System.Drawing.Bitmap home_32 {
             get {
-                object obj = ResourceManager.GetObject("Settings_32px", resourceCulture);
+                object obj = ResourceManager.GetObject("home_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap minecraft_server_32 {
+            get {
+                object obj = ResourceManager.GetObject("minecraft_server_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_32 {
+            get {
+                object obj = ResourceManager.GetObject("settings_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap upload_32 {
+            get {
+                object obj = ResourceManager.GetObject("upload_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

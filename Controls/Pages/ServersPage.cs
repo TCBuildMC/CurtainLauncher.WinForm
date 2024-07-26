@@ -1,5 +1,4 @@
-﻿using CurtainLauncher.WinForm.Forms.Server;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +15,6 @@ namespace CurtainLauncher.WinForm.Controls.Pages
         public ServersPage()
         {
             InitializeComponent();
-        }
-
-        private void SetupNewServerButton_Click(object sender, EventArgs e)
-        {
-            Form form = new ServerSetupForm();
-            form.ShowDialog();
         }
     }
 }
